@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </head>
+  <body id="my-body">
+    <div class="container">
+        <h1>
+            <span class='letter'>M</span>
+            <span class='letter'>E</span>
+            <span class='letter'>M</span>
+            <span class='letter'>O</span>
+            <span class='letter'>R</span>
+            <span class='letter'>Y</span>
+            <span class='letter'>-</span>
+            <span class='letter'>G</span>
+            <span class='letter'>A</span>
+            <span class='letter'>M</span>
+            <span class='letter'>E</span>
+        </h1>
+        <h2 id="total-score">Score:</h3>
+        <form action="submit">
+              <div class="col-6 form-group offset-3">
+                <input type="number" id="userInput" class="form-control" placeholder="Number of card pairs?">
+              </div>
+              <button class="btn btn-dark mb-3 col-6 mt-3" id="addtask">Start Game</button>
+        </form>
+    </div>
+    <div id="game">
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button id="play-again" class="in-game">Play Again</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

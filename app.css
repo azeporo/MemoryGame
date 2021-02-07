@@ -1,0 +1,45 @@
+h1 {
+  text-align: center;
+  font-size: 5rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+  color: rgb(243, 14, 14);
+}
+
+form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.in-game {
+  display: none;
+  visibility: hidden;
+}
+
+.letter {
+	transition: color 750ms;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 150px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#play-again {
+  align-items: flex-end;
+  margin-top: 15px; 
+}
+
+#my-body{
+  background-color: lightgrey;
+  margin: 15px;
+}
