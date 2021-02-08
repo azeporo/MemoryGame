@@ -7,12 +7,15 @@ let score = 0;
 let cardOne = ''
 let cardTwo = ''
 let eventActive = false
+let userInput = 0
+let gameCardPairs = 0
 
 
 //EVALUATES THE USERS INPUT TO COMENCE GAME OR PLAY AGAIN
 form.addEventListener('submit', function(e){
   e.preventDefault();
   let num = input.value
+  userInput = parseInt(num);
   numOfCards(num);
   createDivsForColors(shuffledColors);
   form.classList.toggle('in-game');
@@ -97,7 +100,14 @@ function validSelection (){
         },500)
       }
       else{
+            gameCardPairs ++;
             eventActive = false
+            if(gameCardPairs === userInput){
+              let myAlert = document.querySelector('#winner');
+              myAlert.classList = "alert alert-info fade-in"
+              
+            }
+            
       }
   } 
   }
